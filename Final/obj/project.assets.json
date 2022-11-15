@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Frost\\.nuget\\packages\\": {}
+    "C:\\Users\\Harji\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Frost\\source\\repos\\FinalTrivia\\Final\\Final.csproj",
+      "projectUniqueName": "F:\\Other Projects\\FinalTrivia\\Final\\Final.csproj",
       "projectName": "Final",
-      "projectPath": "C:\\Users\\Frost\\source\\repos\\FinalTrivia\\Final\\Final.csproj",
-      "packagesPath": "C:\\Users\\Frost\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Frost\\source\\repos\\FinalTrivia\\Final\\obj\\",
+      "projectPath": "F:\\Other Projects\\FinalTrivia\\Final\\Final.csproj",
+      "packagesPath": "C:\\Users\\Harji\\.nuget\\packages\\",
+      "outputPath": "F:\\Other Projects\\FinalTrivia\\Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Frost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Harji\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
