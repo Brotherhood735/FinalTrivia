@@ -4,13 +4,13 @@ public class Program
 {
     public static void Main(String[] args)
     {
-        #region  Card Creating 
+        #region  Card Creating
             var c1 = new Card
             {
                 ID = 1,
                 Category = " Sexual Health ",
                 Question = "What is the most common STD/STI in the USA?",
-                Answer = "Human papillomavirus (HPV)",
+                Answer = "human papillomavirus (hpv)",
                 Choices = new List<string>()
                 {
                     "Human papillomavirus (HPV)",
@@ -27,7 +27,7 @@ public class Program
                 Answer = "Any type of sexual contact without consent",
                 Choices = new List<string>()
                 {
-                    "Touching someone on their genitals",
+                     "Touching someone on their genitals",
                     "Forcfully grabbing someone by their genitals",
                     "Any type of sexual contact without consent",
                     "hitting someone"
@@ -76,16 +76,27 @@ public class Program
                     "antipsychotics"
                 }
             };
+            var cards = new List<Card>()
+            {
+                c1,
+                c2,
+                c3,
+                c4,
+                c5
+            };
         #endregion
+
+        var _gameManager = new Game();
         
-            
         // Not currently being used, need to utilize this for random numbers?
         List<int> gamequestionNumbers = new List<int> { 1, 2, 3, 4 };
 
         Console.WriteLine("Welcome to Triviabate");
-
+            
         var _canPlay = GetAgeInputWithMinorCheck();
-        if (!_canPlay) return;
+        if (_canPlay)
+            return;
+        
         
         Console.WriteLine("You're 18 or older let's get the party started!");
         
@@ -93,6 +104,28 @@ public class Program
         var _pUsername = Console.ReadLine();
     
         var aGame = new Game() { Player1 = _pUsername };
+        var score = 0;
+        foreach (var _card in cards)
+        {
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            if (cards[i].Question == cards[i+1].Question)
+            {
+                
+            }
+            Console.WriteLine(cards[i].Question);
+            var ans = Console.ReadLine();
+            if (ans.ToLower() == cards[i].Answer || cards[i].Answer.Contains(ans))
+            {
+                
+                Console.WriteLine("Good job!");
+                continue;
+            }
+            Console.WriteLine("Wrong Answer");
+        }
+        Console.WriteLine($"your score is {score}");
+        
     }
 
     /// <summary>
@@ -118,7 +151,7 @@ public class Program
         return false;
     }
 
-    public static bool IsAdult(int age) => age >= 18; 
+    public static bool IsAdult(int age) => age >= 18;
     
     //this can be a struct if we're not going to have any methods
     public struct Card
@@ -133,6 +166,7 @@ public class Program
     public class Game
     {
         //can be something like public List<String> Players = new List<String>();
+        public List<String> Players = new List<String>();
         public String Player1 { get; set; }
 
         public String Player2 { get; set; }
